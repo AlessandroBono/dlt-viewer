@@ -42,30 +42,30 @@ icons_48x48.files = icon/48x48/org.genivi.DLTViewer.png
 icons_256x256.files = icon/256x256/org.genivi.DLTViewer.png
 icons_symbolic.files = icon/symbolic/org.genivi.DLTViewer-symbolic.svg
 
-icons.path = $$PREFIX/usr/share/pixmaps
-icons_16x16.path = $$PREFIX/usr/share/icons/hicolor/16x16/apps
-icons_22x22.path = $$PREFIX/usr/share/icons/hicolor/22x22/apps
-icons_24x24.path = $$PREFIX/usr/share/icons/hicolor/24x24/apps
-icons_32x32.path = $$PREFIX/usr/share/icons/hicolor/32x32/apps
-icons_48x48.path = $$PREFIX/usr/share/icons/hicolor/48x48/apps
-icons_256x256.path = $$PREFIX/usr/share/icons/hicolor/256x256/apps
-icons_symbolic.path = $$PREFIX/usr/share/icons/hicolor/symbolic/apps
+icons.path = $$PREFIX/share/pixmaps
+icons_16x16.path = $$PREFIX/share/icons/hicolor/16x16/apps
+icons_22x22.path = $$PREFIX/share/icons/hicolor/22x22/apps
+icons_24x24.path = $$PREFIX/share/icons/hicolor/24x24/apps
+icons_32x32.path = $$PREFIX/share/icons/hicolor/32x32/apps
+icons_48x48.path = $$PREFIX/share/icons/hicolor/48x48/apps
+icons_256x256.path = $$PREFIX/share/icons/hicolor/256x256/apps
+icons_symbolic.path = $$PREFIX/share/icons/hicolor/symbolic/apps
 
 INSTALLS += icons icons_16x16 icons_22x22 icons_24x24 icons_32x32 icons_48x48 icons_256x256 icons_symbolic
 
 # desktop file to show the application in start menu on Linux
 # This should work on both KDE and Gnome
-desktop.path = $$PREFIX/usr/share/applications
+desktop.path = $$PREFIX/share/applications
 desktop.files = org.genivi.DLTViewer.desktop
 INSTALLS += desktop
 
 # Unix header exports
-headers.path = $$PREFIX/usr/include/dlt-viewer
+headers.path = $$PREFIX/include/dlt-viewer
 headers.files = plugininterface.h
 INSTALLS += headers
 
 # Unix executable install path
-target.path = $$PREFIX/usr/bin
+target.path = $$PREFIX/bin
 INSTALLS += target
 
 # Building an app bundle for macx is not so easy, hence disable it

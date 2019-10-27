@@ -5,7 +5,7 @@ QT_VER_MAJ = $$member(QT_VERSION, 0)
 QT_VER_MIN = $$member(QT_VERSION, 1)
 
 # Unix executable install path
-target.path = $$PREFIX/usr/bin
+target.path = $$PREFIX/bin
 INSTALLS += target
 
 # Library definitions for debug and release builds

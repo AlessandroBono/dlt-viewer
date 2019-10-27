@@ -10,6 +10,6 @@ build_script:
   - dir
   - mkdir build
   - cd build
-  - qmake ../BuildDltViewer.pro
+  - qmake PREFIX=/usr ../BuildDltViewer.pro
   - nmake
 test: off

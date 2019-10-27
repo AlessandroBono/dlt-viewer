@@ -15,7 +15,7 @@ DEFINES += QDLT_LIBRARY
     QMAKE_CXXFLAGS += -std=gnu++0x
     QMAKE_CXXFLAGS += -Wall
     QMAKE_CXXFLAGS += -Wextra
-    QMAKE_CXXFLAGS += -DPLUGIN_INSTALLATION_PATH=\\\"$$PREFIX/usr/share/dlt-viewer/plugins\\\"
+    QMAKE_CXXFLAGS += -DPLUGIN_INSTALLATION_PATH=\\\"$$PREFIX/share/dlt-viewer/plugins\\\"
     #QMAKE_CXXFLAGS += -pedantic
 }
 
@@ -27,7 +27,7 @@ DEFINES += QDLT_LIBRARY
 unix:DEFINES += BYTE_ORDER=LITTLE_ENDIAN _TTY_POSIX_ QT_VIEWER
 win32:DEFINES += BYTE_ORDER=LITTLE_ENDIAN QT_VIEWER
 
-headers.path = $$PREFIX/usr/include/qdlt
+headers.path = $$PREFIX/include/qdlt
 headers.files = *.h
 
 INSTALLS += headers
